@@ -11,6 +11,9 @@ Explore the timeless legacy of Pune through this interactive website showcasing 
 - Themed dark/light mode
 
 ## 🚀 How to View
-Visit the live site: ()
+Visit the live site: ( https://121sama.github.io/heritage_pune/)
 
 ## 📁 Project Structure
+index.html
+style.css
+script.js
