@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>heritage of punee</title>
+  <title>fundraise</title>
   <link rel="stylesheet" href="./style.css">
 
 </head>
@@ -13,94 +13,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heritage of Pune - Explore Pune's Rich Cultural Legacy</title>
-    <meta name="description" content="Discover Pune's rich cultural heritage through historical landmarks, traditions, and stories. Explore Shaniwar Wada, Aga Khan Palace, and more authentic heritage sites.">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Welcome to FundRaise Pro</title>
+    <meta name="description" content="Join FundRaise Pro - the gamified fundraising platform for motivated interns with achievement-based incentives.">
+    <link rel="stylesheet" href="welcome-styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-brand">
-                <h1>Heritage of Pune</h1>
-            </div>
-            
-            <div class="nav-menu" id="navMenu">
-                <a href="#home" class="nav-link">Home</a>
-                <a href="#levels" class="nav-link">Heritage Levels</a>
-                <a href="#login" class="nav-link">Login</a>
-                <a href="#timeline" class="nav-link">Timeline</a>
-                <a href="#gallery" class="nav-link">Gallery</a>
-                <a href="#events" class="nav-link">Cultural Events</a>
-            </div>
-            
-            <div class="nav-actions">
-                <button class="theme-toggle" id="themeToggle">
-                    <i class="fas fa-moon" id="themeIcon"></i>
-                </button>
-                <div class="mobile-menu-toggle" id="mobileToggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </div>
-    </nav>
-
     <!-- Hero Section -->
-    <section id="home" class="hero-section">
-        <div class="hero-overlay"></div>
-        <div class="hero-background"></div>
+    <section class="hero">
         <div class="hero-content">
-            <h1 class="hero-title fade-in">Explore the Timeless Legacy of Pune</h1>
-            <p class="hero-subtitle fade-in">Discover the rich cultural heritage of Pune through historical landmarks, traditions, and stories</p>
-            <div class="hero-buttons fade-in">
-                <button class="btn btn-primary" onclick="scrollToSection('login')">Join Our Community</button>
-                <button class="btn btn-outline" onclick="scrollToSection('gallery')">View Full Gallery</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Login Section -->
-    <section id="login" class="login-section">
-        <div class="container">
-            <div class="login-container">
-                <div class="login-header">
-                    <h2 class="section-title fade-in" id="loginTitle">Welcome Back</h2>
-                    <p class="section-subtitle fade-in" id="loginSubtitle">Sign in to explore Pune's heritage and access exclusive content</p>
-                </div>
-                
-                <div class="login-card fade-in">
-                    <div class="card-header">
-                        <h3 class="card-title" id="cardTitle">Sign In</h3>
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <i class="fas fa-donate"></i>
+                    Welcome to FundRaise Pro
+                </h1>
+                <p class="hero-subtitle">
+                    The gamified fundraising platform that motivates interns through achievement-based incentives
+                </p>
+                <div class="hero-features">
+                    <div class="feature">
+                        <i class="fas fa-trophy"></i>
+                        <span>Achievement System</span>
                     </div>
-                    <div class="card-content">
-                        <form id="authForm" class="auth-form">
-                            <div class="form-group">
-                                <div class="input-wrapper">
-                                    <i class="fas fa-user input-icon"></i>
-                                    <input type="email" id="email" placeholder="Enter your email address" class="form-input" required>
-                                </div>
+                    <div class="feature">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Progress Tracking</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-share-alt"></i>
+                        <span>Social Sharing</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-medal"></i>
+                        <span>Leaderboards</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="showSignup()">
+                        <i class="fas fa-user-plus"></i>
+                        Get Started
+                    </button>
+                    <button class="btn btn-secondary" onclick="showLogin()">
+                        <i class="fas fa-sign-in-alt"></i>
+                        Sign In
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="dashboard-preview">
+                    <div class="preview-header">
+                        <div class="preview-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <span class="preview-title">FundRaise Pro Dashboard</span>
+                    </div>
+                    <div class="preview-content">
+                        <div class="preview-stats">
+                            <div class="preview-stat">
+                                <div class="stat-value">$1,250</div>
+                                <div class="stat-label">Total Raised</div>
                             </div>
-                            
-                            <div class="form-group">
-                                <div class="input-wrapper">
-                                    <i class="fas fa-lock input-icon"></i>
-                                    <input type="password" id="password" placeholder="Enter your password" class="form-input" required>
-                                    <button type="button" class="password-toggle" id="passwordToggle">
-                                        <i class="fas fa-eye" id="passwordIcon"></i>
-                                    </button>
-                                </div>
+                            <div class="preview-stat">
+                                <div class="stat-value">15</div>
+                                <div class="stat-label">Donations</div>
                             </div>
-                            
-                            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">Sign In</button>
-                        </form>
-                        
-                        <div class="auth-switch">
-                            <p class="switch-text" id="switchText">Don't have an account?</p>
-                            <button class="switch-btn" id="switchBtn">Create Account</button>
+                            <div class="preview-stat">
+                                <div class="stat-value">Level 12</div>
+                                <div class="stat-label">Current Level</div>
+                            </div>
+                        </div>
+                        <div class="preview-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 83%"></div>
+                            </div>
+                            <div class="progress-text">83% of goal reached</div>
+                        </div>
+                        <div class="preview-achievements">
+                            <div class="achievement earned">
+                                <i class="fas fa-star"></i>
+                                <span>Rising Star</span>
+                            </div>
+                            <div class="achievement earned">
+                                <i class="fas fa-trophy"></i>
+                                <span>Big League</span>
+                            </div>
+                            <div class="achievement locked">
+                                <i class="fas fa-crown"></i>
+                                <span>Champion</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -108,840 +110,202 @@
         </div>
     </section>
 
-    <!-- Heritage Levels Section -->
-    <section id="levels" class="levels-section">
+    <!-- Features Section -->
+    <section class="features">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title fade-in">Heritage Interest Levels</h2>
-                <p class="section-subtitle fade-in">Choose your level of engagement with Pune's cultural heritage</p>
-            </div>
-            
-            <div class="levels-grid">
-                <div class="level-card fade-in">
-                    <div class="level-icon">
-                        <i class="fas fa-camera"></i>
+            <h2 class="section-title">Why Choose FundRaise Pro?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gamepad"></i>
                     </div>
-                    <h3 class="level-title">Tourist Explorer</h3>
-                    <p class="level-description">Perfect for visitors wanting to discover Pune's main attractions and cultural highlights</p>
-                    <ul class="level-features">
-                        <li>Historical site visits</li>
-                        <li>Cultural photography</li>
-                        <li>Basic heritage stories</li>
-                    </ul>
+                    <h3>Gamified Experience</h3>
+                    <p>Turn fundraising into an engaging game with levels, achievements, and rewards that motivate continuous progress.</p>
                 </div>
-                
-                <div class="level-card fade-in">
-                    <div class="level-icon">
-                        <i class="fas fa-book"></i>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-analytics"></i>
                     </div>
-                    <h3 class="level-title">Heritage Enthusiast</h3>
-                    <p class="level-description">For those seeking deeper knowledge about Pune's traditions and historical significance</p>
-                    <ul class="level-features">
-                        <li>Detailed historical context</li>
-                        <li>Cultural workshops</li>
-                        <li>Heritage walks</li>
-                    </ul>
+                    <h3>Real-time Analytics</h3>
+                    <p>Track your performance with detailed charts, progress bars, and donation history to optimize your strategy.</p>
                 </div>
-                
-                <div class="level-card fade-in">
-                    <div class="level-icon">
-                        <i class="fas fa-graduation-cap"></i>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
                     </div>
-                    <h3 class="level-title">Cultural Scholar</h3>
-                    <p class="level-description">Advanced exploration of Pune's heritage with academic resources and research materials</p>
-                    <ul class="level-features">
-                        <li>Academic research access</li>
-                        <li>Expert interviews</li>
-                        <li>Historical documentation</li>
-                    </ul>
+                    <h3>Social Integration</h3>
+                    <p>Share your campaigns on social media, generate referral links, and compete with peers on leaderboards.</p>
                 </div>
-                
-                <div class="level-card fade-in">
-                    <div class="level-icon">
-                        <i class="fas fa-shield-alt"></i>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-lightbulb"></i>
                     </div>
-                    <h3 class="level-title">Heritage Guardian</h3>
-                    <p class="level-description">For dedicated individuals committed to preserving and promoting Pune's cultural legacy</p>
-                    <ul class="level-features">
-                        <li>Conservation projects</li>
-                        <li>Community initiatives</li>
-                        <li>Heritage advocacy</li>
-                    </ul>
+                    <h3>Smart Tips</h3>
+                    <p>Get personalized fundraising advice and strategies to maximize your donation potential and reach goals faster.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Timeline Section -->
-    <section id="timeline" class="timeline-section">
+    <!-- Stats Section -->
+    <section class="stats">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title fade-in">Pune Through the Ages</h2>
-                <p class="section-subtitle fade-in">Journey through Pune's rich history from ancient times to the modern era</p>
-            </div>
-            
-            <div class="timeline">
-                <div class="timeline-item fade-in">
-                    <div class="timeline-content">
-                        <div class="timeline-year">937 CE</div>
-                        <h3 class="timeline-title">Rashtrakuta Dynasty</h3>
-                        <p class="timeline-description">Pune finds its first mention in historical records during the Rashtrakuta period, establishing its significance in the Deccan region.</p>
-                    </div>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">$250K+</div>
+                    <div class="stat-label">Total Raised</div>
                 </div>
-                
-                <div class="timeline-item fade-in">
-                    <div class="timeline-content">
-                        <div class="timeline-year">1595</div>
-                        <h3 class="timeline-title">Mughal Influence</h3>
-                        <p class="timeline-description">The region comes under Mughal control, leading to architectural and cultural developments that shaped medieval Pune.</p>
-                    </div>
+                <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Active Interns</div>
                 </div>
-                
-                <div class="timeline-item fade-in">
-                    <div class="timeline-content">
-                        <div class="timeline-year">1674</div>
-                        <h3 class="timeline-title">Shivaji's Capital</h3>
-                        <p class="timeline-description">Chhatrapati Shivaji establishes Pune as a key center of the Maratha Empire, marking the beginning of its golden age.</p>
-                    </div>
+                <div class="stat-item">
+                    <div class="stat-number">2.5K+</div>
+                    <div class="stat-label">Donations Made</div>
                 </div>
-                
-                <div class="timeline-item fade-in">
-                    <div class="timeline-content">
-                        <div class="timeline-year">1730</div>
-                        <h3 class="timeline-title">Peshwa Era Begins</h3>
-                        <p class="timeline-description">The Peshwas make Pune their capital, leading to unprecedented growth in culture, architecture, and trade.</p>
-                    </div>
-                </div>
-                
-                <div class="timeline-item fade-in">
-                    <div class="timeline-content">
-                        <div class="timeline-year">1818</div>
-                        <h3 class="timeline-title">British Colonial Period</h3>
-                        <p class="timeline-description">British rule brings modern infrastructure, education systems, and administrative changes to Pune.</p>
-                    </div>
-                </div>
-                
-                <div class="timeline-item fade-in">
-                    <div class="timeline-content">
-                        <div class="timeline-year">1947</div>
-                        <h3 class="timeline-title">Independent India</h3>
-                        <p class="timeline-description">Post-independence Pune emerges as an educational and industrial hub, attracting students and businesses from across India.</p>
-                    </div>
-                </div>
-                
-                <div class="timeline-item fade-in">
-                    <div class="timeline-content">
-                        <div class="timeline-year">1990s</div>
-                        <h3 class="timeline-title">IT Revolution</h3>
-                        <p class="timeline-description">Pune transforms into India's IT capital, balancing modern technology with its rich cultural heritage.</p>
-                    </div>
+                <div class="stat-item">
+                    <div class="stat-number">95%</div>
+                    <div class="stat-label">Goal Achievement</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title fade-in">Heritage Gallery</h2>
-                <p class="section-subtitle fade-in">Explore Pune's iconic landmarks and cultural treasures</p>
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><i class="fas fa-sign-in-alt"></i> Sign In</h2>
+                <button class="close-btn" onclick="closeModal()">&times;</button>
             </div>
-            
-            <div class="gallery-grid">
-                <div class="gallery-item fade-in">
-                    <div class="gallery-image">
-                        <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Shaniwar Wada Palace">
-                        <div class="gallery-overlay">
-                            <h3 class="gallery-title">Shaniwar Wada</h3>
-                            <p class="gallery-description">Historic fortified palace of the Peshwas</p>
-                        </div>
+            <form id="login-form" class="auth-form">
+                <div class="form-group">
+                    <label for="login-username">Username</label>
+                    <input type="text" id="login-username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <div class="password-input">
+                        <input type="password" id="login-password" name="password" required>
+                        <button type="button" class="password-toggle" onclick="togglePassword('login-password')">
+                            <i class="fas fa-eye"></i>
+                        </button>
                     </div>
                 </div>
-                
-                <div class="gallery-item fade-in">
-                    <div class="gallery-image">
-                        <img src="https://images.unsplash.com/photo-1599474924187-334a4ae5bd3c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Aga Khan Palace">
-                        <div class="gallery-overlay">
-                            <h3 class="gallery-title">Aga Khan Palace</h3>
-                            <p class="gallery-description">Memorial of Mahatma Gandhi's imprisonment</p>
-                        </div>
-                    </div>
+                <div class="form-options">
+                    <label class="checkbox">
+                        <input type="checkbox" id="remember-me">
+                        <span class="checkmark"></span>
+                        Remember me
+                    </label>
+                    <a href="#" class="forgot-password">Forgot password?</a>
                 </div>
-                
-                <div class="gallery-item fade-in">
-                    <div class="gallery-image">
-                        <img src="https://images.unsplash.com/photo-1609920658906-8223bd289001?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pataleshwar Cave Temple">
-                        <div class="gallery-overlay">
-                            <h3 class="gallery-title">Pataleshwar Caves</h3>
-                            <p class="gallery-description">Ancient rock-cut temple dedicated to Lord Shiva</p>
-                        </div>
-                    </div>
+                <button type="submit" class="btn btn-primary btn-full">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Sign In
+                </button>
+                <div class="auth-switch">
+                    Don't have an account? 
+                    <a href="#" onclick="switchToSignup()">Sign up here</a>
                 </div>
-                
-                <div class="gallery-item fade-in">
-                    <div class="gallery-image">
-                        <img src="https://images.unsplash.com/photo-1544550581-5f7ceaf7f992?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Kasba Peth">
-                        <div class="gallery-overlay">
-                            <h3 class="gallery-title">Kasba Peth</h3>
-                            <p class="gallery-description">Traditional Marathi neighborhood with authentic architecture</p>
-                        </div>
-                    </div>
+                <div class="demo-info">
+                    <p><strong>Demo Account:</strong> sarah_j / password123</p>
                 </div>
-                
-                <div class="gallery-item fade-in">
-                    <div class="gallery-image">
-                        <img src="https://images.unsplash.com/photo-1591799265444-4f5d96d6ec25?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Dagdusheth Temple">
-                        <div class="gallery-overlay">
-                            <h3 class="gallery-title">Dagdusheth Temple</h3>
-                            <p class="gallery-description">Famous Ganesh temple and cultural center</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="gallery-item fade-in">
-                    <div class="gallery-image">
-                        <img src="https://images.unsplash.com/photo-1577659132380-f0fe4b2eff7c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Lal Mahal">
-                        <div class="gallery-overlay">
-                            <h3 class="gallery-title">Lal Mahal</h3>
-                            <p class="gallery-description">Childhood residence of Chhatrapati Shivaji</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </form>
         </div>
-    </section>
+    </div>
 
-    <!-- Cultural Events Section -->
-    <section id="events" class="events-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title fade-in">Cultural Events & Festivals</h2>
-                <p class="section-subtitle fade-in">Experience Pune's vibrant cultural celebrations throughout the year</p>
+    <!-- Signup Modal -->
+    <div id="signup-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><i class="fas fa-user-plus"></i> Create Account</h2>
+                <button class="close-btn" onclick="closeModal()">&times;</button>
             </div>
-            
-            <div class="events-grid">
-                <div class="event-card fade-in">
-                    <div class="event-image">
-                        <img src="https://images.unsplash.com/photo-1567086903271-5956c4df8ec0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Ganpati Festival">
+            <form id="signup-form" class="auth-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="signup-firstname">First Name</label>
+                        <input type="text" id="signup-firstname" name="firstname" required>
                     </div>
-                    <div class="event-content">
-                        <div class="event-date">August - September</div>
-                        <h3 class="event-title">Ganpati Festival</h3>
-                        <p class="event-description">Pune's most celebrated festival featuring elaborate decorations, cultural programs, and community participation across the city's numerous Ganesh mandals.</p>
-                        <div class="event-features">
-                            <span class="event-tag">Traditional Music</span>
-                            <span class="event-tag">Street Processions</span>
-                            <span class="event-tag">Cultural Performances</span>
+                    <div class="form-group">
+                        <label for="signup-lastname">Last Name</label>
+                        <input type="text" id="signup-lastname" name="lastname" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email Address</label>
+                    <input type="email" id="signup-email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-username">Username</label>
+                    <input type="text" id="signup-username" name="username" required>
+                    <small class="form-hint">Choose a unique username for your profile</small>
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Password</label>
+                    <div class="password-input">
+                        <input type="password" id="signup-password" name="password" required>
+                        <button type="button" class="password-toggle" onclick="togglePassword('signup-password')">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="password-strength">
+                        <div class="strength-bar">
+                            <div class="strength-fill"></div>
                         </div>
+                        <small class="strength-text">Enter a password</small>
                     </div>
                 </div>
-                
-                <div class="event-card fade-in">
-                    <div class="event-image">
-                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Peth Heritage Walk">
-                    </div>
-                    <div class="event-content">
-                        <div class="event-date">Year Round</div>
-                        <h3 class="event-title">Heritage Peth Walking Tours</h3>
-                        <p class="event-description">Guided walks through Pune's historic peths (neighborhoods) showcasing traditional Marathi architecture, local markets, and authentic cultural experiences.</p>
-                        <div class="event-features">
-                            <span class="event-tag">Historical Architecture</span>
-                            <span class="event-tag">Local Markets</span>
-                            <span class="event-tag">Expert Guides</span>
-                        </div>
+                <div class="form-group">
+                    <label for="signup-confirm-password">Confirm Password</label>
+                    <div class="password-input">
+                        <input type="password" id="signup-confirm-password" name="confirmPassword" required>
+                        <button type="button" class="password-toggle" onclick="togglePassword('signup-confirm-password')">
+                            <i class="fas fa-eye"></i>
+                        </button>
                     </div>
                 </div>
-                
-                <div class="event-card fade-in">
-                    <div class="event-image">
-                        <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Marathi Cultural Programs">
-                    </div>
-                    <div class="event-content">
-                        <div class="event-date">Monthly</div>
-                        <h3 class="event-title">Marathi Cultural Programs</h3>
-                        <p class="event-description">Regular cultural events featuring traditional Marathi theater, classical music concerts, and poetry recitations celebrating Pune's rich literary heritage.</p>
-                        <div class="event-features">
-                            <span class="event-tag">Classical Music</span>
-                            <span class="event-tag">Theater</span>
-                            <span class="event-tag">Poetry</span>
-                        </div>
-                    </div>
+                <div class="form-group">
+                    <label class="checkbox">
+                        <input type="checkbox" id="agree-terms" required>
+                        <span class="checkmark"></span>
+                        I agree to the <a href="#" class="terms-link">Terms of Service</a> and <a href="#" class="privacy-link">Privacy Policy</a>
+                    </label>
                 </div>
-            </div>
+                <button type="submit" class="btn btn-primary btn-full">
+                    <i class="fas fa-user-plus"></i>
+                    Create Account
+                </button>
+                <div class="auth-switch">
+                    Already have an account? 
+                    <a href="#" onclick="switchToLogin()">Sign in here</a>
+                </div>
+            </form>
         </div>
-    </section>
+    </div>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2 class="cta-title fade-in">Ready to Explore Pune's Heritage?</h2>
-                <p class="cta-subtitle fade-in">Join our community of heritage enthusiasts and start your journey through Pune's cultural landscape</p>
-                <div class="cta-buttons fade-in">
-                    <button class="btn btn-secondary" onclick="scrollToSection('gallery')">Explore Historic Sites</button>
-                    <button class="btn btn-outline-white" onclick="scrollToSection('login')">Join Community</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3 class="footer-title">Heritage of Pune</h3>
-                    <p class="footer-description">Preserving and sharing Pune's rich cultural legacy through authentic stories, historical insights, and community engagement.</p>
-                    <div class="footer-social">
-                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-section">
-                    <h4 class="footer-subtitle">Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#levels">Heritage Levels</a></li>
-                        <li><a href="#timeline">Timeline</a></li>
-                        <li><a href="#gallery">Heritage Gallery</a></li>
-                        <li><a href="#login">Login</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4 class="footer-subtitle">Heritage Sites</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Shaniwar Wada</a></li>
-                        <li><a href="#">Aga Khan Palace</a></li>
-                        <li><a href="#">Pataleshwar Caves</a></li>
-                        <li><a href="#">Dagdusheth Temple</a></li>
-                        <li><a href="#">Lal Mahal</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4 class="footer-subtitle">Cultural Programs</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Ganpati Festival</a></li>
-                        <li><a href="#">Heritage Walks</a></li>
-                        <li><a href="#">Marathi Theater</a></li>
-                        <li><a href="#">Classical Music</a></li>
-                        <li><a href="#">Cultural Workshops</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2024 Heritage of Pune. Preserving culture through education.</p>
-                <p class="creator-credit">Created by Samrudhi Patil</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Toast Notification -->
-    <div id="toast" class="toast">
-        <div class="toast-content">
-            <div class="toast-icon">
+    <!-- Success Modal -->
+    <div id="success-modal" class="modal">
+        <div class="modal-content success-content">
+            <div class="success-icon">
                 <i class="fas fa-check-circle"></i>
             </div>
-            <div class="toast-message">
-                <div class="toast-title"></div>
-                <div class="toast-description"></div>
-            </div>
-            <button class="toast-close" onclick="hideToast()">
-                <i class="fas fa-times"></i>
+            <h2>Welcome to FundRaise Pro!</h2>
+            <p>Your account has been created successfully. You can now start your fundraising journey.</p>
+            <button class="btn btn-primary" onclick="proceedToDashboard()">
+                <i class="fas fa-rocket"></i>
+                Go to Dashboard
             </button>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <script src="welcome-script.js"></script>
 </body>
 </html>
-    initializeTheme();
-    initializeNavigation();
-    initializeAuth();
-    initializeAnimations();
-    initializeMobileMenu();
-});
-
-// Theme Management
-function initializeTheme() {
-    document.documentElement.setAttribute('data-theme', currentTheme);
-    updateThemeIcon();
-}
-
-function toggleTheme() {
-    currentTheme = currentTheme === 'light' ? 'dark' : 'light';
-    document.documentElement.setAttribute('data-theme', currentTheme);
-    localStorage.setItem('theme', currentTheme);
-    updateThemeIcon();
-}
-
-function updateThemeIcon() {
-    const themeIcon = document.getElementById('themeIcon');
-    themeIcon.className = currentTheme === 'light' ? 'fas fa-moon' : 'fas fa-sun';
-}
-
-// Navigation
-function initializeNavigation() {
-    const themeToggle = document.getElementById('themeToggle');
-    themeToggle.addEventListener('click', toggleTheme);
-    
-    // Smooth scroll for navigation links
-    const navLinks = document.querySelectorAll('.nav-link');
-    navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href').substring(1);
-            scrollToSection(targetId);
-        });
-    });
-    
-    // Add scroll effect to navbar
-    window.addEventListener('scroll', function() {
-        const navbar = document.querySelector('.navbar');
-        if (window.scrollY > 100) {
-            navbar.style.backgroundColor = currentTheme === 'light' 
-                ? 'rgba(255, 255, 255, 0.95)' 
-                : 'rgba(42, 42, 42, 0.95)';
-            navbar.style.backdropFilter = 'blur(10px)';
-        } else {
-            navbar.style.backgroundColor = currentTheme === 'light' 
-                ? '#ffffff' 
-                : '#2a2a2a';
-            navbar.style.backdropFilter = 'none';
-        }
-    });
-}
-
-function scrollToSection(sectionId) {
-    const element = document.getElementById(sectionId);
-    if (element) {
-        const navbarHeight = document.querySelector('.navbar').offsetHeight;
-        const elementPosition = element.offsetTop - navbarHeight;
-        
-        window.scrollTo({
-            top: elementPosition,
-            behavior: 'smooth'
-        });
-    }
-}
-
-// Mobile Menu
-function initializeMobileMenu() {
-    const mobileToggle = document.getElementById('mobileToggle');
-    const navMenu = document.getElementById('navMenu');
-    
-    mobileToggle.addEventListener('click', function() {
-        navMenu.classList.toggle('show');
-        mobileToggle.classList.toggle('active');
-    });
-    
-    // Close mobile menu when clicking on a link
-    const navLinks = document.querySelectorAll('.nav-link');
-    navLinks.forEach(link => {
-        link.addEventListener('click', function() {
-            navMenu.classList.remove('show');
-            mobileToggle.classList.remove('active');
-        });
-    });
-}
-
-// Authentication
-function initializeAuth() {
-    const authForm = document.getElementById('authForm');
-    const switchBtn = document.getElementById('switchBtn');
-    const passwordToggle = document.getElementById('passwordToggle');
-    
-    // Form submission
-    authForm.addEventListener('submit', handleAuthSubmit);
-    
-    // Switch between login and register
-    switchBtn.addEventListener('click', toggleAuthMode);
-    
-    // Password visibility toggle
-    passwordToggle.addEventListener('click', togglePasswordVisibility);
-}
-
-function handleAuthSubmit(e) {
-    e.preventDefault();
-    
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-    const submitBtn = document.getElementById('submitBtn');
-    
-    // Basic validation
-    if (!email || !password) {
-        showToast('Missing Information', 'Please fill in both email and password.', 'error');
-        return;
-    }
-    
-    if (!isValidEmail(email)) {
-        showToast('Invalid Email', 'Please enter a valid email address.', 'error');
-        return;
-    }
-    
-    if (password.length < 6) {
-        showToast('Weak Password', 'Password must be at least 6 characters long.', 'error');
-        return;
-    }
-    
-    // Disable form during submission
-    submitBtn.disabled = true;
-    submitBtn.textContent = isLoginMode ? 'Signing In...' : 'Creating Account...';
-    
-    // Simulate API call
-    setTimeout(() => {
-        if (isLoginMode) {
-            // Simulate login
-            simulateLogin(email, password);
-        } else {
-            // Simulate registration
-            simulateRegister(email, password);
-        }
-        
-        submitBtn.disabled = false;
-        submitBtn.textContent = isLoginMode ? 'Sign In' : 'Create Account';
-    }, 1500);
-}
-
-function simulateLogin(email, password) {
-    // For demo purposes, accept any valid email/password combination
-    showToast('Login Successful!', 'Welcome to Heritage of Pune community.', 'success');
-    clearForm();
-}
-
-function simulateRegister(email, password) {
-    // For demo purposes, always show success
-    showToast('Registration Successful!', 'Welcome to Heritage of Pune! Please login to continue.', 'success');
-    toggleAuthMode();
-    clearForm();
-}
-
-function toggleAuthMode() {
-    isLoginMode = !isLoginMode;
-    
-    const loginTitle = document.getElementById('loginTitle');
-    const loginSubtitle = document.getElementById('loginSubtitle');
-    const cardTitle = document.getElementById('cardTitle');
-    const submitBtn = document.getElementById('submitBtn');
-    const switchText = document.getElementById('switchText');
-    const switchBtn = document.getElementById('switchBtn');
-    
-    if (isLoginMode) {
-        loginTitle.textContent = 'Welcome Back';
-        loginSubtitle.textContent = 'Sign in to explore Pune\'s heritage and access exclusive content';
-        cardTitle.textContent = 'Sign In';
-        submitBtn.textContent = 'Sign In';
-        switchText.textContent = 'Don\'t have an account?';
-        switchBtn.textContent = 'Create Account';
-    } else {
-        loginTitle.textContent = 'Join Our Community';
-        loginSubtitle.textContent = 'Create an account to become part of Pune\'s heritage community';
-        cardTitle.textContent = 'Create Account';
-        submitBtn.textContent = 'Create Account';
-        switchText.textContent = 'Already have an account?';
-        switchBtn.textContent = 'Sign In';
-    }
-    
-    clearForm();
-}
-
-function togglePasswordVisibility() {
-    const passwordInput = document.getElementById('password');
-    const passwordIcon = document.getElementById('passwordIcon');
-    
-    if (passwordInput.type === 'password') {
-        passwordInput.type = 'text';
-        passwordIcon.className = 'fas fa-eye-slash';
-    } else {
-        passwordInput.type = 'password';
-        passwordIcon.className = 'fas fa-eye';
-    }
-}
-
-function clearForm() {
-    document.getElementById('email').value = '';
-    document.getElementById('password').value = '';
-}
-
-function isValidEmail(email) {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-}
-
-// Toast Notifications
-function showToast(title, message, type = 'success') {
-    const toast = document.getElementById('toast');
-    const toastIcon = toast.querySelector('.toast-icon i');
-    const toastTitle = toast.querySelector('.toast-title');
-    const toastDescription = toast.querySelector('.toast-description');
-    
-    // Update content
-    toastTitle.textContent = title;
-    toastDescription.textContent = message;
-    
-    // Update icon based on type
-    if (type === 'error') {
-        toastIcon.className = 'fas fa-exclamation-circle';
-        toast.querySelector('.toast-icon').classList.add('error');
-    } else {
-        toastIcon.className = 'fas fa-check-circle';
-        toast.querySelector('.toast-icon').classList.remove('error');
-    }
-    
-    // Show toast
-    toast.classList.add('show');
-    
-    // Auto-hide after 5 seconds
-    setTimeout(() => {
-        hideToast();
-    }, 5000);
-}
-
-function hideToast() {
-    const toast = document.getElementById('toast');
-    toast.classList.remove('show');
-}
-
-// Animations
-function initializeAnimations() {
-    // Intersection Observer for fade-in animations
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-    
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            }
-        });
-    }, observerOptions);
-    
-    // Observe all fade-in elements
-    const fadeElements = document.querySelectorAll('.fade-in');
-    fadeElements.forEach(el => observer.observe(el));
-    
-    // Add staggered animation delays
-    fadeElements.forEach((el, index) => {
-        el.style.transitionDelay = `${index * 100}ms`;
-    });
-}
-
-// Gallery hover effects
-document.addEventListener('DOMContentLoaded', function() {
-    const galleryItems = document.querySelectorAll('.gallery-item');
-    
-    galleryItems.forEach(item => {
-        item.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-8px) scale(1.02)';
-        });
-        
-        item.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateY(0) scale(1)';
-        });
-    });
-});
-
-// Parallax effect for hero section
-window.addEventListener('scroll', function() {
-    const scrolled = window.pageYOffset;
-    const heroBackground = document.querySelector('.hero-background');
-    
-    if (heroBackground) {
-        const rate = scrolled * -0.5;
-        heroBackground.style.transform = `translateY(${rate}px)`;
-    }
-});
-
-// Utility functions
-function debounce(func, wait) {
-    let timeout;
-    return function executedFunction(...args) {
-        const later = () => {
-            clearTimeout(timeout);
-            func(...args);
-        };
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-    };
-}
-
-// Optimized scroll handler
-const optimizedScrollHandler = debounce(function() {
-    // Add any scroll-based functionality here
-}, 16); // ~60fps
-
-window.addEventListener('scroll', optimizedScrollHandler);
-
-// Form validation helpers
-function validateForm(email, password) {
-    const errors = [];
-    
-    if (!email) {
-        errors.push('Email is required');
-    } else if (!isValidEmail(email)) {
-        errors.push('Please enter a valid email address');
-    }
-    
-    if (!password) {
-        errors.push('Password is required');
-    } else if (password.length < 6) {
-        errors.push('Password must be at least 6 characters long');
-    }
-    
-    return errors;
-}
-
-// Loading states
-function setLoadingState(element, isLoading) {
-    if (isLoading) {
-        element.disabled = true;
-        element.classList.add('loading');
-    } else {
-        element.disabled = false;
-        element.classList.remove('loading');
-    }
-}
-
-// Local storage helpers
-function saveToStorage(key, value) {
-    try {
-        localStorage.setItem(key, JSON.stringify(value));
-    } catch (error) {
-        console.error('Error saving to localStorage:', error);
-    }
-}
-
-function getFromStorage(key) {
-    try {
-        const item = localStorage.getItem(key);
-        return item ? JSON.parse(item) : null;
-    } catch (error) {
-        console.error('Error reading from localStorage:', error);
-        return null;
-    }
-}
-
-// Analytics simulation (for demo purposes)
-function trackEvent(eventName, properties = {}) {
-    console.log('Event tracked:', eventName, properties);
-    // In a real application, this would send data to your analytics service
-}
-
-// Track page sections viewed
-function trackSectionView(sectionName) {
-    trackEvent('section_viewed', { section: sectionName });
-}
-
-// Initialize section tracking
-document.addEventListener('DOMContentLoaded', function() {
-    const sections = document.querySelectorAll('section[id]');
-    
-    const sectionObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
-                trackSectionView(entry.target.id);
-            }
-        });
-    }, { threshold: 0.5 });
-    
-    sections.forEach(section => sectionObserver.observe(section));
-});
-
-// Error handling
-window.addEventListener('error', function(e) {
-    console.error('JavaScript error:', e.error);
-    // In a real application, you might want to send this to an error tracking service
-});
-
-// Handle offline/online status
-window.addEventListener('online', function() {
-    showToast('Connection Restored', 'You are back online!', 'success');
-});
-
-window.addEventListener('offline', function() {
-    showToast('Connection Lost', 'You are currently offline. Some features may not work.', 'error');
-});
-
-// Keyboard accessibility
-document.addEventListener('keydown', function(e) {
-    // Close toast with Escape key
-    if (e.key === 'Escape') {
-        hideToast();
-    }
-    
-    // Navigate sections with arrow keys (when not in input)
-    if (document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA') {
-        if (e.key === 'ArrowDown') {
-            e.preventDefault();
-            navigateToNextSection();
-        } else if (e.key === 'ArrowUp') {
-            e.preventDefault();
-            navigateToPreviousSection();
-        }
-    }
-});
-
-function navigateToNextSection() {
-    const sections = Array.from(document.querySelectorAll('section[id]'));
-    const currentScrollPos = window.scrollY + 100;
-    
-    for (let i = 0; i < sections.length; i++) {
-        if (sections[i].offsetTop > currentScrollPos) {
-            scrollToSection(sections[i].id);
-            break;
-        }
-    }
-}
-
-function navigateToPreviousSection() {
-    const sections = Array.from(document.querySelectorAll('section[id]')).reverse();
-    const currentScrollPos = window.scrollY - 100;
-    
-    for (let i = 0; i < sections.length; i++) {
-        if (sections[i].offsetTop < currentScrollPos) {
-            scrollToSection(sections[i].id);
-            break;
-        }
-    }
-}
-
-// Print styles (if user wants to print the page)
-window.addEventListener('beforeprint', function() {
-    document.body.classList.add('printing');
-});
-
-window.addEventListener('afterprint', function() {
-    document.body.classList.remove('printing');
-});
-
-// Performance monitoring
-function measurePerformance() {
-    if ('performance' in window) {
-        window.addEventListener('load', function() {
-            setTimeout(function() {
-                const perfData = performance.timing;
-                const loadTime = perfData.loadEventEnd - perfData.navigationStart;
-                console.log('Page load time:', loadTime + 'ms');
-                
-                // Track performance metrics
-                trackEvent('page_performance', {
-                    load_time: loadTime,
-                    dom_ready: perfData.domContentLoadedEventEnd - perfData.navigationStart
-                });
-            }, 0);
-        });
-    }
-}
-
-measurePerformance();
 <!-- partial -->
   <script  src="./script.js"></script>
 
